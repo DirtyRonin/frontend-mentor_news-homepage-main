@@ -6,7 +6,7 @@ export function LeadArticle() {
   return (
     <div className="lead-article-container">
       <picture>
-        <source media="(min-width:900px)" srcSet={LeadImg} />
+        <source media="(min-width:901px)" srcSet={LeadImg} />
         <source media="(max-width:900px)" srcSet={LeadImgMobile} />
         <img className="image" alt="" src={LeadImg} />
       </picture>

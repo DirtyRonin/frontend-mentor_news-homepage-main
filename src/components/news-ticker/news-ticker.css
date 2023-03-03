@@ -3,7 +3,7 @@
   /* height: 750px; */
   display: flex;
   flex-flow: column nowrap;
-  padding: 2rem;
+  padding: 1.5rem;
   color: white;
 }
 
@@ -30,5 +30,10 @@
 @media (width < 1100px) {
   .news-ticker-container > .seperator {
     margin: 1rem 0;
+  }
+}
+@media (width < 900px) {
+  .news-ticker-container > .seperator {
+    margin: 1.8rem 0;
   }
 }

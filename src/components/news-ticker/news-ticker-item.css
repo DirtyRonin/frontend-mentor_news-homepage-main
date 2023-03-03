@@ -17,11 +17,17 @@ p {
   }
 }
 
-.news-ticker-item a:active {
+@media (width < 900px) {
+  .news-ticker-item > a {
+    font-size: 1.3rem;
+  }
+}
+
+.news-ticker-item > a:active {
   color: var(--soft-orange);
 }
 
-.news-ticker-item p {
+.news-ticker-item > p {
   color: var(--grayish-blue);
   margin-top: 0.8rem;
   font-size: 1rem;
@@ -42,5 +48,12 @@ p {
   .news-ticker-item > p {
     font-size: 0.8rem;
     font-weight: 600;
+  }
+}
+
+@media (width < 900px) {
+  .news-ticker-item > p {
+    font-size: 1rem;
+    font-weight: 400;
   }
 }

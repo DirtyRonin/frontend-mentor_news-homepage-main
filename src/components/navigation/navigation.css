@@ -1,6 +1,12 @@
 .nav-container {
 }
 
+@media (width < 900px) {
+  .nav-container {
+    display: none;
+  }
+}
+
 .nav-container :first-child {
   color: var(--dark-grayish-blue);
   display: flex;
@@ -14,6 +20,6 @@
   cursor: pointer;
 }
 
-.nav-container a:active{
+.nav-container a:active {
   color: var(--soft-orange);
 }

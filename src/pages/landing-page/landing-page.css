@@ -5,12 +5,27 @@
   grid-gap: 5rem 1rem;
 }
 
-#landing-page .lead-article-section {
+@media (width < 900px) {
+  #landing-page {
+    grid-template-columns: var(--mobile-width);
+    grid-template-rows: 1fr;
+  }
+}
+
+#landing-page > .lead-article-section {
   grid-area: 1 / 1 / span 1 / span 2;
 }
-#landing-page .news-ticker-section {
+#landing-page > .news-ticker-section {
   grid-area: 1 / 3 / span 1 / span 1;
 }
-#landing-page .top-three-articles-section {
+#landing-page > .top-three-articles-section {
   grid-area: 2 / 1 / 2 / span 3;
+}
+
+@media (width < 900px) {
+  #landing-page > .lead-article-section,
+  #landing-page > .news-ticker-section,
+  #landing-page > .top-three-articles-section {
+    grid-area: unset;
+  }
 }

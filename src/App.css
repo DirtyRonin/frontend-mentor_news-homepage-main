@@ -1,9 +1,35 @@
+#app {
+  display: grid;
+  max-width: var(--desktop-width);
+  padding: 1rem;
+  background-color: white;
+}
+
+@media (width < 900px) {
+  #app {
+    width: var(--mobile-width);
+    padding-top: 2rem;
+  }
+}
+
 .app-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
 }
 
-.app-header img {
+@media (width < 900px) {
+  .app-header {
+    margin-bottom: 2rem;
+  }
+}
+
+.app-header > img {
   height: 2.7rem;
+}
+
+@media (width < 900px) {
+  .app-header > img {
+    height: 2rem;
+  }
 }

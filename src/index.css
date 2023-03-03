@@ -4,6 +4,9 @@
 }
 
 html {
+  --desktop-width:1240px;
+  --mobile-width:340px;
+
   --soft-orange: hsl(35, 77%, 62%);
   --soft-red: hsl(5, 85%, 63%);
   --off-white: hsl(36, 100%, 99%);
@@ -22,11 +25,14 @@ html {
 body {
   max-width: 1440px;
   display: flex;
-  align-items: center;
   flex-flow: row wrap;
-  /* max-width: 1240px; */
-  max-width: 83rem;
-  /* padding: 0 2rem; */
+  align-items: center;
   margin: 0;
-  padding: 1rem;
+}
+
+@media (width < 900px) {
+  body {
+    align-items: flex-start;
+    background-color: black;
+  }
 }

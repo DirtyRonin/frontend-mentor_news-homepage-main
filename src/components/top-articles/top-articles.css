@@ -4,65 +4,92 @@
   grid-gap: 2rem;
 }
 
+@media (width < 900px) {
+  .top-articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+}
+
 .top-article-item {
   display: grid;
   grid-template-columns: 100px auto;
   grid-gap: 1.8rem;
 }
 
-.top-article-item .top-article-image {
+.top-article-item > .top-article-image {
   max-width: 100px;
 }
 
-.top-article-item .top-article-text > * {
+.top-article-item > .top-article-text > * {
   margin: 0;
 }
 
-.top-article-item .top-article-text {
+.top-article-item > .top-article-text {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   gap: 1rem;
 }
 
-.top-article-item .top-article-text h2 {
+.top-article-item > .top-article-text > h2 {
   font-size: 2rem;
   color: var(--grayish-blue);
 }
 
 @media (width < 1100px) {
-  .top-article-item .top-article-text h2 {
+  .top-article-item > .top-article-text > h2 {
     font-size: 1.5rem;
-    color: var(--grayish-blue);
   }
 }
 
-.top-article-item .top-article-text a {
+@media (width < 900px) {
+  .top-article-item > .top-article-text > h2 {
+    font-size: 2rem;
+  }
+}
+
+.top-article-item > .top-article-text > a {
   font-weight: 800;
   text-decoration: none;
   cursor: pointer;
   color: black;
+  font-size: 1.2rem;
 }
 
 @media (width < 1100px) {
-  .top-article-item .top-article-text a {
+  .top-article-item > .top-article-text > a {
     font-size: 0.8rem;
   }
 }
 
-.top-article-item .top-article-text a:active {
+@media (width < 900px) {
+  .top-article-item > .top-article-text > a {
+    font-size: 1.2rem;
+  }
+}
+
+.top-article-item > .top-article-text > a:active {
   color: var(--soft-red);
 }
 
-.top-article-item .top-article-text p {
+.top-article-item > .top-article-text > p {
   color: var(--dark-grayish-blue);
   line-height: 1.5rem;
   font-weight: 500;
 }
 
 @media (width < 1100px) {
-  .top-article-item .top-article-text p {
+  .top-article-item > .top-article-text > p {
     line-height: 1.3rem;
     font-size: 0.8rem;
+  }
+}
+
+@media (width < 900px) {
+  .top-article-item > .top-article-text > p {
+    line-height: 1.5rem;
+    font-size: 1rem;
   }
 }

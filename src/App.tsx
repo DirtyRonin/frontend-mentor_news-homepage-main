@@ -5,7 +5,7 @@ import { LandingPage } from './pages/landing-page';
 
 function App() {
   return (
-    <>
+    <div id='app'>
       <header className="app-header">
         <img alt="" src={IconLogo} />
         <Navigation />
@@ -15,7 +15,7 @@ function App() {
         <LandingPage />
       </main>
       <footer></footer>
-    </>
+    </div>
   );
 }
 
