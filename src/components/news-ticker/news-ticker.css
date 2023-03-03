@@ -15,8 +15,20 @@
   margin-bottom: 2rem;
 }
 
-.seperator {
+@media (width < 1100px) {
+  .news-ticker-container::before {
+    font-size: 2rem;
+  }
+}
+
+.news-ticker-container > .seperator {
   width: 100%;
   border-bottom: 0.8px var(--dark-grayish-blue) solid;
   margin: 1.8rem 0;
+}
+
+@media (width < 1100px) {
+  .news-ticker-container > .seperator {
+    margin: 1rem 0;
+  }
 }

@@ -11,7 +11,13 @@ p {
   text-decoration: none;
 }
 
-.news-ticker-item a:active{
+@media (width < 1100px) {
+  .news-ticker-item > a {
+    font-size: 1rem;
+  }
+}
+
+.news-ticker-item a:active {
   color: var(--soft-orange);
 }
 
@@ -22,4 +28,19 @@ p {
   font-weight: 400;
   line-height: 1.7rem;
   text-overflow: ellipsis;
+}
+.news-ticker-item > p {
+  color: var(--grayish-blue);
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  text-overflow: ellipsis;
+}
+
+@media (width < 1100px) {
+  .news-ticker-item > p {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
 }
