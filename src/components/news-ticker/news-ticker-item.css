@@ -1,0 +1,25 @@
+.news-ticker-item a,
+p {
+  margin: 0;
+}
+
+.news-ticker-item a {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0;
+  text-decoration: none;
+}
+
+.news-ticker-item a:active{
+  color: var(--soft-orange);
+}
+
+.news-ticker-item p {
+  color: var(--grayish-blue);
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  text-overflow: ellipsis;
+}

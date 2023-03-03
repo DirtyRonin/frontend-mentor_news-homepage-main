@@ -1,0 +1,19 @@
+.nav-container {
+}
+
+.nav-container :first-child {
+  color: var(--dark-grayish-blue);
+  display: flex;
+  font-size: 1rem;
+  gap: 2.85rem;
+  list-style: none;
+}
+
+.nav-container a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-container a:active{
+  color: var(--soft-orange);
+}

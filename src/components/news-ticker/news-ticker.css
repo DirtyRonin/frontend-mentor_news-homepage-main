@@ -1,0 +1,22 @@
+.news-ticker-container {
+  background-color: var(--very-dark-blue);
+  /* height: 750px; */
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 2rem;
+  color: white;
+}
+
+.news-ticker-container::before {
+  color: var(--soft-orange);
+  content: 'New';
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.seperator {
+  width: 100%;
+  border-bottom: 0.8px var(--dark-grayish-blue) solid;
+  margin: 1.8rem 0;
+}

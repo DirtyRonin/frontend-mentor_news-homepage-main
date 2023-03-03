@@ -1,0 +1,16 @@
+#landing-page {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 365px)) minmax(200px, 350px);
+  grid-template-rows: 1fr auto;
+  grid-gap: 5rem 1rem;
+}
+
+#landing-page .lead-article-section {
+  grid-area: 1 / 1 / span 1 / span 2;
+}
+#landing-page .news-ticker-section {
+  grid-area: 1 / 3 / span 1 / span 1;
+}
+#landing-page .top-three-articles-section {
+  grid-area: 2 / 1 / 2 / span 3;
+}
