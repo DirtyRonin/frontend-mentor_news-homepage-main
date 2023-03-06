@@ -3,6 +3,13 @@
   max-width: var(--desktop-width);
   padding: 1rem;
   background-color: white;
+  position: relative;
+}
+
+#content-container.blured {
+  filter: blur(4px);
+  z-index: 2;
+  height: 100%;
 }
 
 @media (width < 900px) {
@@ -32,4 +39,22 @@
   .app-header > img {
     height: 2rem;
   }
+}
+
+main {
+  z-index: 1;
+}
+
+#sidebar {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: calc(100%);
+  background-color: white;
+  z-index: 100;
+}
+
+#sidebar.hidden {
+  display: none;
 }
