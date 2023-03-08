@@ -1,5 +1,6 @@
 import './top-articles.css';
 import { TopArticleItem } from './top-article-item';
+import { joinWithPublicUrl } from '../../util/join-with-public-url';
 
 export function TopArticles() {
   const topArticles = [
@@ -26,7 +27,7 @@ export function TopArticles() {
   return (
     <div className="top-articles">
       {topArticles.map((x, index) => (
-        <TopArticleItem key={`top-article-item-${index}`} src={x.src} rank={x.rank} header={x.header} subHeader={x.subHeader} />
+        <TopArticleItem key={`top-article-item-${index}`} src={joinWithPublicUrl(x.src)} rank={x.rank} header={x.header} subHeader={x.subHeader} />
       ))}
     </div>
   );
